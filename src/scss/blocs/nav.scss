@@ -1,0 +1,12 @@
+nav {
+  position: absolute;
+  right: 4vw;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 150px;
+    width: auto;
+  }
+}

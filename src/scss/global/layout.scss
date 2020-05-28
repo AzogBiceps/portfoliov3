@@ -1,0 +1,16 @@
+$basecolor: #559FA2;
+$text: #EEEEEE;
+
+html {
+  background-color: #2A4B4D;
+  color: $text;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: Raleway;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}

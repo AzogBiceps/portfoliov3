@@ -1,0 +1,43 @@
+@import "../global/layout.scss";
+
+.presentation {
+  display: flex;
+  // width: auto;
+  // margin-top: 15%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hello {
+  font-size: 4vw;
+  margin: auto;
+  line-height: 140%;
+
+  // position: absolute;
+  // top: 50%;
+  // left: 14%;
+  // transform: translateY(-50%);
+
+  a {
+    text-decoration: none;
+    color: $basecolor;
+    // animation-name: opacity;
+    // animation-duration: 1s;
+    // animation-timing-function: ease-in-out;
+
+    &:hover {
+      -webkit-text-stroke: $basecolor 2px;
+      color: transparent;
+      transition-duration: .2s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}
+
+// @keyframes opacity {
+//   from {opacity: 0%; }
+//   60% {
+//     color: #73b3b6;
+//   }
+//   to  {opacity: 100%; }
+//   };
