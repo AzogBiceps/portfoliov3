@@ -1,3 +1,5 @@
+@import "../global/layout.scss";
+
 header {
   left: 4vw;
   top: 6vh;
@@ -5,4 +7,8 @@ header {
   width: auto;
   height: auto;
   font-size: 1vw;
+
+  a {
+    color: $text;
+  }
 }
