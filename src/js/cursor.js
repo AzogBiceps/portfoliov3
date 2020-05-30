@@ -1,6 +1,7 @@
 var cursor = document.querySelectorAll(".cursor");
 var follower = document.querySelectorAll(".cursor-follower");
-const links = document.querySelectorAll(".link");
+const links = document.querySelectorAll("a");
+// const links = document.querySelectorAll(".link");
 
 var posX = 0;
 var posY = 0;
@@ -30,6 +31,7 @@ TweenMax.to({}, 0.016, {
   }
 });
 
+// jquery
 // $(document).on("mousemove", function(e) {
 //     mouseX = e.pageX;
 //     mouseY = e.pageY;
@@ -44,17 +46,14 @@ TweenMax.to({}, 0.016, {
 //     follower.removeClass("active");
 // });
 
-
-
+// tracking
 document.addEventListener("mousemove", function(e) {
     mouseX = e.pageX;
     mouseY = e.pageY;
 });
 
-
-
-
-links.forEach(link => {
+// mouseenter
+links.forEach(function(a) {
     addEventListener("mouseenter", function() {
         cursor.addClass("active");
     });
@@ -63,14 +62,8 @@ links.forEach(link => {
     });
 });
 
-
-// document.querySelectorAll(".link").addEventListener("mouseenter", function() {
-//     cursor.addClass("active");
-//     follower.addClass("active");
-// });
-
-
-links.forEach(link => {
+//mouseleave
+links.forEach(function(a) {
     addEventListener("mouseleave", function() {
         cursor.removeClass("active");
     });
@@ -79,7 +72,7 @@ links.forEach(link => {
     });
 });
 
-// document.querySelectorAll(".link").addEventListener("mouseleave", function() {
-//     cursor.removeClass("active");
-//     follower.removeClass("active");
-// });
+// test
+links.addEventListener("mouseenter", function() {
+    cursor.addClass("active");
+});
