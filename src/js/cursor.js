@@ -2,11 +2,11 @@ var cursor = document.querySelectorAll(".cursor");
 var follower = document.querySelectorAll(".cursor-follower");
 const links = document.querySelectorAll(".link");
 
-var posX = 0,
-    posY = 0;
+var posX = 0;
+var posY = 0;
 
-var mouseX = 0,
-    mouseY = 0;
+var mouseX = 0;
+var mouseY = 0;
 
 TweenMax.to({}, 0.016, {
   repeat: -1,
