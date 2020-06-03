@@ -1,6 +1,7 @@
-var cursor = document.querySelectorAll(".cursor");
-var follower = document.querySelectorAll(".cursor-follower");
-const links = document.querySelectorAll("a");
+var cursor = document.querySelector(".cursor");
+var follower = document.querySelector(".cursor-follower");
+var links = document.querySelectorAll("a");
+// const link = document.querySelector("a");
 // const links = document.querySelectorAll(".link");
 
 var posX = 0;
@@ -16,17 +17,17 @@ TweenMax.to({}, 0.016, {
     posY += (mouseY - posY) / 9;
     
     TweenMax.set(follower, {
-        css: {    
+      css: {    
         left: posX - 12,
         top: posY - 12
-        }
+      }
     });
     
     TweenMax.set(cursor, {
-        css: {    
+      css: {    
         left: mouseX,
         top: mouseY
-        }
+      }
     });
   }
 });
@@ -48,31 +49,42 @@ TweenMax.to({}, 0.016, {
 
 // tracking
 document.addEventListener("mousemove", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
+  mouseX = e.pageX;
+  mouseY = e.pageY;
 });
 
-// mouseenter
-links.forEach(function(a) {
-    addEventListener("mouseenter", function() {
-        cursor.addClass("active");
-    });
-    addEventListener("mouseenter", function() {
-        follower.addClass("active");
-    });
-});
+// // mouseenter
+// links.forEach(function(a) {
+//     a.addEventListener("mouseenter", function() {
+//         cursor.classList.add("active");
+//     });
+//     a.addEventListener("mouseleave", function() {
+//         cursor.classList.remove("active");
+//     });
+// });
 
-//mouseleave
-links.forEach(function(a) {
-    addEventListener("mouseleave", function() {
-        cursor.removeClass("active");
-    });
-    addEventListener("mouseleave", function() {
-        follower.removeClass("active");
-    });
-});
+// //mouseleave
+// links.forEach(function(a) {
+//     a.addEventListener("mouseenter", function() {
+//         follower.classList.add("active");
+//     });
+//     a.addEventListener("mouseleave", function() {
+//         follower.classList.remove("active");
+//     });
+// });
 
-// test
-links.addEventListener("mouseenter", function() {
-    cursor.addClass("active");
-});
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("mouseenter", function() {
+    cursor.classList.add("active");
+    follower.classList.add("active");
+  });
+};
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener("mouseleave", function() {
+    cursor.classList.remove("active");
+    follower.classList.remove("active");
+  });
+};
+
+
