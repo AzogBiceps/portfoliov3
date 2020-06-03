@@ -1,8 +1,6 @@
 var cursor = document.querySelector(".cursor");
 var follower = document.querySelector(".cursor-follower");
 var links = document.querySelectorAll("a");
-// const link = document.querySelector("a");
-// const links = document.querySelectorAll(".link");
 
 var posX = 0;
 var posY = 0;
@@ -32,47 +30,13 @@ TweenMax.to({}, 0.016, {
   }
 });
 
-// jquery
-// $(document).on("mousemove", function(e) {
-//     mouseX = e.pageX;
-//     mouseY = e.pageY;
-// });
-
-// $(".link").on("mouseenter", function() {
-//     cursor.addClass("active");
-//     follower.addClass("active");
-// });
-// $(".link").on("mouseleave", function() {
-//     cursor.removeClass("active");
-//     follower.removeClass("active");
-// });
-
 // tracking
 document.addEventListener("mousemove", function(e) {
   mouseX = e.pageX;
   mouseY = e.pageY;
 });
 
-// // mouseenter
-// links.forEach(function(a) {
-//     a.addEventListener("mouseenter", function() {
-//         cursor.classList.add("active");
-//     });
-//     a.addEventListener("mouseleave", function() {
-//         cursor.classList.remove("active");
-//     });
-// });
-
-// //mouseleave
-// links.forEach(function(a) {
-//     a.addEventListener("mouseenter", function() {
-//         follower.classList.add("active");
-//     });
-//     a.addEventListener("mouseleave", function() {
-//         follower.classList.remove("active");
-//     });
-// });
-
+// mouseenter
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("mouseenter", function() {
     cursor.classList.add("active");
@@ -80,11 +44,10 @@ for (let i = 0; i < links.length; i++) {
   });
 };
 
+// mouseleave
 for (let i = 0; i < links.length; i++) {
   links[i].addEventListener("mouseleave", function() {
     cursor.classList.remove("active");
     follower.classList.remove("active");
   });
 };
-
-

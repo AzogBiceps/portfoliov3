@@ -3,17 +3,16 @@ nav {
   right: 4vw;
   top: 50%;
   transform: translateY(-50%);
-
+  
   ul {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     height: 20vh;
-    // width: auto;
-
+    
     svg {
       width: 2vw;
-
+      
       &:hover {
         path {
           fill: $basecolor;
