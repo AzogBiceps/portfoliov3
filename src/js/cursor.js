@@ -8,6 +8,7 @@ var posY = 0;
 var mouseX = 0;
 var mouseY = 0;
 
+// Migrate to gsap one day
 TweenMax.to({}, 0.016, {
   repeat: -1,
   onRepeat: function() {
