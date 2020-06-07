@@ -10,5 +10,9 @@ header {
 
   a {
     color: $text;
+
+    &:hover {
+      color: $basecolor;
+    }
   }
 }

@@ -1,5 +1,6 @@
-@import "./src/scss/vendors/reset.scss";
+@import "./vendors/reset.scss";
+@import "./global/cursor.scss";
 @import "./blocs/header.scss";
 @import "./blocs/presentation.scss";
 @import "./blocs/nav.scss";
-@import "./global/cursor.scss";
+@import "./global/responsive.scss";
