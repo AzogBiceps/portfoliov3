@@ -8,6 +8,10 @@ header {
   height: auto;
   font-size: 1vw;
 
+  width: 92%;
+  display: inline-flex;
+  justify-content: space-between;
+
   a {
     color: $text;
 

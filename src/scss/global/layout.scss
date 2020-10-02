@@ -1,6 +1,11 @@
 $basecolor: #559FA2;
 $text: #EEEEEE;
 
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/font/Raleway-ExtraBold.ttf") format("ttf");
+}
+
 html {
   background-color: #2A4B4D;
   color: $text;
