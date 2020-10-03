@@ -3,6 +3,10 @@ $break-mobile: 450px;
 
 // tablet
 @media screen and (max-width: $break-tablet) {
+  header {
+    font-size: calc(.5em + 1vw);
+  }
+
   .pc {
     display: none;
   }
@@ -32,7 +36,7 @@ $break-mobile: 450px;
         margin: auto;
 
         svg {
-          width: 4vw;
+          width: 3vw;
           display: block;
           margin: auto;
         }
