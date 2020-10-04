@@ -3,7 +3,7 @@ $break-mobile: 450px;
 
 // tablet
 @media screen and (max-width: $break-tablet) {
-  header {
+  header, h2 {
     font-size: calc(.5em + 1vw);
   }
 
@@ -43,8 +43,13 @@ $break-mobile: 450px;
       }
     }
   }
+
   .hello {
     font-size: 4.5vw;
+  }
+
+  .resume {
+    bottom: 10vw;
   }
 }
 
@@ -81,5 +86,9 @@ $break-mobile: 450px;
 
   .hello {
     font-size: 4.5vw;
+  }
+
+  .resume {
+    bottom: 20vw;
   }
 }

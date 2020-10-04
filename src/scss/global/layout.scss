@@ -23,4 +23,8 @@ body {
 a {
   text-decoration: none;
   z-index: 100;
+  color: $text;
+    &:hover {
+      color: $basecolor;
+    }
 }

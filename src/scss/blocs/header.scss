@@ -11,12 +11,4 @@ header {
   width: 92%;
   display: inline-flex;
   justify-content: space-between;
-
-  a {
-    color: $text;
-
-    &:hover {
-      color: $basecolor;
-    }
-  }
 }
