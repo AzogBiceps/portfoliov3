@@ -14,5 +14,6 @@
     "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.5"
-  }
+  },
+  "dependencies": {}
 }

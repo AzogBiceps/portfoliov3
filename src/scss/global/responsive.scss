@@ -4,7 +4,17 @@ $break-mobile: 450px;
 // tablet
 @media screen and (max-width: $break-tablet) {
   header, h2 {
-    font-size: calc(.5em + 1vw);
+    font-size: calc(.5em + 2vw);
+  }
+
+  header > h2 {
+    width: 20%;
+    text-align: right;
+  }
+
+  header > h1 {
+    width: 20%;
+    text-align: left;
   }
 
   .pc {
@@ -49,7 +59,9 @@ $break-mobile: 450px;
   }
 
   .resume {
-    bottom: 10vw;
+    bottom: 15vw;
+    font-size: calc(.5em + 2vw);
+
   }
 }
 
@@ -85,10 +97,12 @@ $break-mobile: 450px;
   }
 
   .hello {
-    font-size: 4.5vw;
+    // font-size: 4.5vw;
+    font-size: 6vw;
+    width: 90%;
   }
 
   .resume {
-    bottom: 20vw;
+    bottom: 30vw;
   }
 }
