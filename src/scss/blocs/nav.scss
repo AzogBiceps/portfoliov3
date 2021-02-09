@@ -8,10 +8,10 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 30vh;
+    height: 25vh;
     
     svg {
-      width: 2vw;
+      width: 1.5vw;
       
       &:hover {
         path {
@@ -26,7 +26,7 @@ nav {
   position: absolute;
   bottom: 6vh;
   left: 4vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 header > h2 {
