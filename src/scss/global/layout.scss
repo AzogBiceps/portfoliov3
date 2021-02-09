@@ -3,9 +3,9 @@ $text: #EEEEEE;
 
 @font-face {
   font-family: "Raleway";
-  src: url("/assets/font/Raleway-ExtraBold.ttf") format("ttf");
-  src: url("/assets/font/Raleway-ExtraBold.woff") format("woff");
   src: url("/assets/font/Raleway-ExtraBold.woff2") format("woff2");
+  src: url("/assets/font/Raleway-ExtraBold.woff") format("woff");
+  src: url("/assets/font/Raleway-ExtraBold.ttf") format("ttf");
 }
 
 html {
