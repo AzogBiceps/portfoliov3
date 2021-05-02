@@ -1,16 +1,15 @@
-$basecolor: #559FA2;
+$basecolor: #52B1E9;
 $text: #EEEEEE;
 
 @font-face {
   font-family: "Raleway";
-  // font-weight: 800;
   src: url("/assets/font/Raleway-ExtraBold.woff2") format("woff2");
   src: url("/assets/font/Raleway-ExtraBold.ttf") format("ttf");
   src: url("/assets/font/Raleway-ExtraBold.woff") format("woff");
 }
 
 html {
-  background-color: #2A4B4D;
+  background-color: #092F47;
   color: $text;
 }
 
